@@ -26,6 +26,7 @@ public:
            x =x/10;
            rs = rs*10 + w;
           
+
        }
       rs = rs*-1;
    }
