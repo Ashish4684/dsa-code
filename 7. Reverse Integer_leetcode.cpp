@@ -14,6 +14,7 @@ public:
        { int w = x%10;
            x =x/10;
            rs = rs*10 + w;
+
           
        }
 
