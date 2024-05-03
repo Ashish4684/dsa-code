@@ -1,0 +1,20 @@
+ int n = nums.size();
+        int f = 0 ;
+        int e = n-1;
+        int  mid ;
+        if(target<nums[0]){
+            return 0;
+        }
+        while(f<=e){
+          mid = (f+e)/2;
+            if(target==nums[mid]){
+                return mid;
+            }
+            else if(target<nums[mid]){
+                e = mid-1;
+            }
+            else{
+                f = mid + 1;
+            }
+        }
+     return f;
